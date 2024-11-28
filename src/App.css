@@ -1,0 +1,125 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Fondo oscuro degradado */
+  color: #ffffff; /* Texto blanco */
+  overflow-x: hidden; /* Evitar scroll horizontal */
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Header */
+.App-header {
+  background: linear-gradient(135deg, #1a1f26, #292e39); /* Fondo metálico oscuro */
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #00f5ff; /* Texto color neón */
+  padding: 20px;
+  border-radius: 12px; /* Bordes más redondeados */
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2); /* Sombra luminosa */
+}
+
+/* Search Box */
+.search__box {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.search__box--input {
+  flex: 1;
+  padding: 15px 20px;
+  font-size: 18px;
+  color: #00f5ff; /* Texto neón */
+  background: transparent;
+  border: 2px solid #00f5ff;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search__box--input:focus {
+  border-color: #ff007f; /* Color de foco */
+  box-shadow: 0 0 10px #ff007f;
+}
+
+.search__box--btn {
+  padding: 15px 25px;
+  font-size: 18px;
+  background: linear-gradient(135deg, #ff007f, #8a2be2); /* Fondo degradado futurista */
+  color: white;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search__box--btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(255, 0, 127, 0.7); /* Brillo al pasar el ratón */
+}
+
+/* Main Content */
+.main__content {
+  margin-top: 30px;
+}
+
+.main__content--grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Images */
+.main__content--grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3); /* Sombra luminosa */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main__content--grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 255, 255, 0.5); /* Brillo más intenso */
+}
+
+/* Links */
+.App-link {
+  color: #00f5ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.App-link:hover {
+  color: #ff007f;
+  text-shadow: 0 0 8px #ff007f; /* Resplandor al pasar el ratón */
+}
+
+/* Animations */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Futuristic Button Animation */
+.search__box--btn:active {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(255, 0, 127, 0.8);
+}
